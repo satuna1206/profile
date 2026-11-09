@@ -11,6 +11,12 @@ P {
     padding: 10px;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 h2 {
     color: rgb(251, 144, 105);
     border-bottom: 1px solid #000000;
@@ -24,4 +30,12 @@ table, th, td {
 .favorite {
     color: #ff9b79;
     font-weight: bold;
+}
+
+nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border-radius: 999px;
+    color: #333333;
 }
