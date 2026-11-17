@@ -10,6 +10,10 @@ function answer() {
     let message ="";
     if (question === "趣味は？") {
         message = "ゲームと散歩です。";
+    } else if (question === "好きな食べ物は？") {
+        message = "カレーです。";
+    } else if (question === "出身は？") {
+        message = "名古屋です。";
     } else {
         message = "その質問には、まだ答えられません。";
     }
