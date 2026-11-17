@@ -8,12 +8,14 @@ function greet() {
 function answer() {
     const question = document.getElementById("question").value;
     let message ="";
-    if (question === "趣味は？") {
+      if (question.includes("趣味")) {
         message = "ゲームと散歩です。";
-    } else if (question === "好きな食べ物は？") {
+    } else if (question.includes("食べ物")) {
         message = "カレーです。";
-    } else if (question === "出身は？") {
+    } else if (question.includes("出身")) {
         message = "名古屋です。";
+     } else if (question.includes("好き")) {
+        message = "ねこが好きです。";
     } else {
         message = "その質問には、まだ答えられません。";
     }
