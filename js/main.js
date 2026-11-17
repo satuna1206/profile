@@ -20,19 +20,23 @@ function hasWord(question, words) {
 
 function answer() {
     const question = document.getElementById("question").value;
-    let message ="";
-     if (hasWord(question, hobbyWords)) {
+    const replyBox = document.getElementById("reply");
+    replyBox.classList.remove("unknown");
+    let message = "";
+    if (hasWord(question, hobbyWords)) {
         message = "ゲームと散歩です。";
-    } else if (hasWord (question,foodWords)("食べ物") && question.includes("嫌い")) {message = "ピーマンが苦手です。";
-    } else if (hasWord(question,foodWords)) {
+    } else if (hasWord(question, foodWords) && question.includes("嫌い")) {
+        message = "ピーマンが苦手です。";
+    } else if (hasWord(question, foodWords)) {
         message = "カレーです。";
-    } else if (hasWord (question,hometownWords)("出身")) {
+    } else if (hasWord(question, hometownWords)) {
         message = "名古屋です。";
     } else if (question.includes("好き")) {
         message = "ねこが好きです。";
     } else {
         message = "その質問には、まだ答えられません。";
+        replyBox.classList.add("unknown");
     }
-    document.getElementById("reply").textContent = message;
+    replyBox.textContent = message;
 }
 

@@ -50,6 +50,10 @@ header {
     align-items: center;
 }
 
+.unknown {
+    color: gray;
+}
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
