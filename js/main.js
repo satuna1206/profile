@@ -8,7 +8,7 @@ function greet() {
 function answer() {
     const question = document.getElementById("question").value;
     let message ="";
-    if (question === "趣味は？") {
+    if (question === "趣味は?") {
         message = "ゲームと散歩です。";
     } else {
         message = "その質問には、まだ答えられません。";
