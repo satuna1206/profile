@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>チャットをしてみよう</title>
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+  <header>
+    <h1>チャットをしてみよう</h1>
+  </header>
+
+  <main>
+
+    <div class="message-row left">
+      <div class="bubble other">
+        どんな音楽をよく聴くの？
+      </div>
+    </div>
+
+    <div class="message-row right">
+      <div class="bubble me">
+        J-POPをよく聴くよ。
+      </div>
+    </div>
+
+    <div class="message-row left">
+      <div class="bubble other">
+        そうなんだ！好きなアーティストはいる？
+      </div>
+    </div>
+
+    <div class="message-row right">
+      <div class="bubble me">
+        Official髭男dismが好きだよ。
+      </div>
+    </div>
+
+    <div class="message-row left">
+      <div class="bubble other">
+        私も好き！特にどの曲がお気に入り？
+      </div>
+    </div>
+
+    <div class="message-row right">
+      <div class="bubble me">
+        「Subtitle」が好きかな。メロディーも歌詞もすてきで、何回聴いても飽きないし、勉強や作業をするときにもよく流しているよ。
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>質問を入れて、ボタンを押してください。</p>
+    <input type="text" id="question">
+    <button onclick="answer()">質問する</button>
+    <p id="reply"></p>
+  </footer>
+
+</body>
+</html>

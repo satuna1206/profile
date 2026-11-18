@@ -1,0 +1,72 @@
+body
+{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+header
+{
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main
+{
+  padding: 15px;
+}
+
+.message-row
+{
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.left
+{
+  justify-content: flex-start;
+}
+
+.right
+{
+  justify-content: flex-end;
+}
+
+.bubble
+{
+  padding: 12px;
+  border-radius: 15px;
+  max-width: 70%;
+}
+
+.other
+{
+  background-color: white;
+}
+
+.me
+{
+  background-color: #cce5ff;
+}
+
+footer
+{
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  border-top: 1px solid #cccccc;
+}
+
+footer input
+{
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+footer button
+{
+  padding: 10px 20px;
+}
